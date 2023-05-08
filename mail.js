@@ -8,10 +8,10 @@ const firebaseConfig = {
     appId: "1:973775030404:web:ecf89ccf23ebcde8479ad1",
     measurementId: "G-J3ENFTVT7Y"
   };
-  //initialize firebase
+  
 firebase.initializeApp(firebaseConfig);
 
-// reference your database
+
 var contactFormDB = firebase.database().ref("contactForm");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
